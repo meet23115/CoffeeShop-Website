@@ -459,6 +459,116 @@ section{
     background: none;
 }
 
+.blogs .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.blogs .box-container .box{
+    border: var(--boredr);
+}
+
+.blogs .box-container .box .image{
+    height: 25rem;
+    overflow: hidden;
+    width: 100%;
+}
+
+.blogs .box-container .box .image img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.blogs .box-container .box .image:hover img{
+    transform: scale(1.2);
+}
+
+.blogs .box-container .box .content{
+    padding: 2rem;
+}
+
+.blogs .box-container .box .content .title{
+    font-size: 2.5rem;
+    color: #fff;
+    line-height: 1.5;
+} 
+
+.blogs .box-container .box .content .title:hover{
+    color: var(--main-color);
+}
+
+.blogs .box-container .box .content span{
+    display: block;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+
+.blogs .box-container .box .content p{
+    line-height: 1.8;
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    color: #ccc;
+}
+
+.footer{
+    background: var(--black);
+    text-align: center;
+}
+
+.footer .social{
+    padding: 1rem 0;
+}
+
+.footer .social a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #fff;
+    border: var(--boredr);
+    margin: .4rem;
+    border-radius: 50%;    
+}
+
+.footer .social a:hover{
+    background-color: var(--main-color);
+    color: var(--black);
+}
+
+.footer .links{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer .links a{
+    padding: .7rem 2rem;
+    color: #fff;
+    border: var(--boredr);
+    font-size: 2rem;
+}
+
+.footer .links a:hover{ 
+    background-color: var(--main-color);
+    color: var(--black);
+    transform: scale(1.1);
+}
+
+.footer .credit{
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: lighter;
+    padding: 1.5rem;
+}
+
+.footer .credit span{
+    color: var(--main-color);
+}
 
 /* media quires */
 
